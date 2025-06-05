@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 09. Indexer", "NET 09\NET 09. Indexer.csproj", "{8C396BF5-E9D1-4BEB-9A20-BE930B59052C}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 09. delegates", "NET 09. delegates\NET 09. delegates.csproj", "{D4FC4DC3-2DCD-4E4C-B12C-B9CAD73497CF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NET 09. CPP pointer to function", "NET 09. CPP pointer to function\NET 09. CPP pointer to function.vcxproj", "{CD7FFBA1-960E-47BD-B91F-FF9D0B71AEF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET 10", ".NET 10", "{E8A9AE8F-A13C-4F14-86FF-ADDAC70945CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 10. Standard interfaces", "NET 10. Standard interfaces\NET 10. Standard interfaces.csproj", "{96469275-C0D6-4821-A563-7CB42925BD69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,18 @@ Global
 		{CD7FFBA1-960E-47BD-B91F-FF9D0B71AEF2}.Release|x64.Build.0 = Release|x64
 		{CD7FFBA1-960E-47BD-B91F-FF9D0B71AEF2}.Release|x86.ActiveCfg = Release|Win32
 		{CD7FFBA1-960E-47BD-B91F-FF9D0B71AEF2}.Release|x86.Build.0 = Release|Win32
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|x64.Build.0 = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Debug|x86.Build.0 = Debug|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|x64.ActiveCfg = Release|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|x64.Build.0 = Release|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|x86.ActiveCfg = Release|Any CPU
+		{96469275-C0D6-4821-A563-7CB42925BD69}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +81,7 @@ Global
 		{8C396BF5-E9D1-4BEB-9A20-BE930B59052C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{D4FC4DC3-2DCD-4E4C-B12C-B9CAD73497CF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{CD7FFBA1-960E-47BD-B91F-FF9D0B71AEF2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{96469275-C0D6-4821-A563-7CB42925BD69} = {E8A9AE8F-A13C-4F14-86FF-ADDAC70945CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {939EE77E-8D5B-4FF5-9487-8F9572983853}
