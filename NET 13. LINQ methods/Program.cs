@@ -114,7 +114,6 @@ List<Student> students = new List<Student>
 
 #endregion
 
-
 #region OrderBy, OrderByDescending, ThenBy, ThenByDescending
 
 //var result = students.OrderBy(s => s.Age).ToList();
@@ -127,5 +126,70 @@ List<Student> students = new List<Student>
 //                      .ThenBy(s => s.LastName)
 //                      .ToList();
 //result2.ForEach(Console.WriteLine);
+
+#endregion
+
+#region Count
+//var count = students.Count(s => s.GroupId == 4);
+//Console.WriteLine(count);
+#endregion
+
+#region Take, Skip, TakeLast, SkipLast, SkipWhile, TakeWhile
+//var studs = students.Skip(3).Take(4).ToList();
+//studs.ForEach(Console.WriteLine);/
+
+//var studs1 = students.TakeWhile(s => s.Age < 35).ToList();
+//studs1.ForEach(Console.WriteLine);
+//var studs2 = students.SkipWhile(s => s.Age < 35).ToList();
+//studs2.ForEach(Console.WriteLine);
+
+#endregion
+
+#region Any, All
+//var check = students.All(s => s.Age > 10);
+//Console.WriteLine(check);
+
+//var check1 = students.Any(s => s.Age == 48);
+//Console.WriteLine(check1);
+#endregion
+
+#region Join, GroupJoin
+//var result = groups.Join(students,
+//                        g=> g.Id,
+//                        s=> s.GroupId,
+//                        (g, s) => new
+//                        {
+//                            FirstName = s.FirstName,
+//                            Age = s.Age,
+//                            GroupName = g.Name,
+//                            Faculty = g.Faculty
+//                        });
+
+//foreach (var item in result)
+//{
+//    Console.WriteLine($"{item.FirstName} ({item.Age}) -> {item.GroupName} ({item.Faculty})");
+//}
+
+var resultGroup = groups.GroupJoin(students,
+                                   g => g.Id,
+                                   s => s.GroupId,
+                                   (g, s) => new
+                                   {
+                                       GroupName = g.Name,
+                                       Students = s
+                                   });
+
+foreach (var group in resultGroup)
+{
+    Console.BackgroundColor = ConsoleColor.Red;
+    Console.WriteLine(group.GroupName);
+    Console.BackgroundColor = ConsoleColor.Black;
+    Console.WriteLine();
+
+    foreach (var student in group.Students)
+    {
+        Console.WriteLine($"{student}");
+    }
+}
 
 #endregion
