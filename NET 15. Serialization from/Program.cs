@@ -41,3 +41,5 @@ class Post
 
 // primary constructor
 // yield
+
+//UML, S.O.L.I.D., design patterns(https://refactoring.guru/design-patterns)
