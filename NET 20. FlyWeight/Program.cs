@@ -53,7 +53,6 @@ class Warriror : UnitFlyWeight
     }
 }
 
-
 class FlyWeightFactory
 {
     private Dictionary<string, UnitFlyWeight> _units = new();
